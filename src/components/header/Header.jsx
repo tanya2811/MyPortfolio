@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import Tanya from '../../assets/Tanya.avif'
-import Tanya1 from '../../assets/Tanya1.png'
+// import Tanya1 from '../../assets/Tanya1.png'
 import { FiSun } from 'react-icons/fi'
 import  TypeWriterEffect from 'react-typewriter-effect'
 const Header = () => {

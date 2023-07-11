@@ -1,0 +1,106 @@
+
+header{
+    height: 90vh;
+    overflow: hidden;
+    background: #6082B6;
+    /* background: linear-gradient(90deg, #B2BEB5, #7393B3, white, 	#A9A9A9, 	#6082B6, #E5E4E2); */
+    
+}
+
+.header__container{
+    text-align: center;
+    /* height: 90vh; */
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+}
+header .header__container{
+    padding-top: 5rem;
+}
+.card{
+    height: 90vh;
+}
+.navbar{
+    /* background-color: black; */
+    /* background: rgba(0, 0,0, 0.3); */
+    display: flex;
+    justify-content: space-around;
+    
+}
+.nav{
+    display: flex;
+    justify-content:space-around;
+    margin-left: 50rem;
+}
+.nav a{
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: large;
+
+}
+.name{
+    margin-top: 4%;
+    height: 300px;
+}
+.h1{
+    text-align: left;
+    /* padding-bottom: -11px; */
+}
+span{
+    text-align: left;
+    /* height: 90vh; */
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    font-size: 15px;
+
+}
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+.me{
+    height: 300px;
+    width: auto;
+    margin-top: 4%;
+    margin-right: 7%;
+}
+.you{
+    /* position: absolute; */
+    /* top: 35%;
+    left: 20%; */
+    background: linear-gradient(90deg, #B2BEB5, #7393B3, white, 	#A9A9A9, 	#6082B6, #E5E4E2);
+    background-size: 300%;
+    font-weight: bolder;
+    font-size: 40px;
+    -webkit-text-fill-color: transparent;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 40%;
+    }
+}
+/* MEDIA QUERIES (MEDIAM DEVICES) */
+@media screen and(max-width: 1024px) {
+    header{
+        height: 68vh;
+    }
+    
+}
+/* MEDIA QUERIES (SMALL DEVICES) */
+@media screen and(max-width: 600px) {
+    header{
+        height: 100vh;
+    }
+    
+}

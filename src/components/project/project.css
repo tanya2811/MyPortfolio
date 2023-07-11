@@ -1,0 +1,110 @@
+.p {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+.portfolio__item {
+    background: var(--color-bg-variant);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.portfolio__item:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+.portfolio__item-image {
+    border-radius: 1.5rem;
+    /* height: 200px; */
+    overflow: hidden;
+}
+.portfolio__item-image img{
+    height: 150px;
+}
+.portfolio__item h5{
+    margin: 1.2rem 0 2rem;
+}
+/* Extarnal div css */
+.services__modal-icon{
+    color: var(--title-color);
+    font-size: 1.1rem;
+}
+.services__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0,0,0,0.3) ;
+    z-index: var(--z-modal);
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition:  .3s;
+
+}
+.services__modal-content{
+    margin-top: 120px;
+    width: 400px;
+    height: 400px;
+    background-color:#4db5ffcb; ;
+    /* opacity: 1 ; */
+    position: relative;
+    padding: 4.5rem 2.5rem 2.5rem;
+    border-radius: 1.5rem;
+}
+.services__modal-close{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+
+    cursor: pointer;
+}
+.services__modal-title, 
+.services__modal-desc{
+    text-align: center;
+}
+.services__modal-title{
+    font-size: 18px;
+    margin-top: 7px;                               
+}
+.services__modal-desc{
+ margin-top: 10px;
+ line-height: 30px;
+ text-align: left;
+    
+}
+.project__details-icon{
+    margin-top: 6px;
+    /* color: var(--color-primary-variant); */
+}
+.project__details{
+    display: flex;
+    gap:1rem ;
+}
+/* ACTIVE MODAL */
+.active-modal {
+    opacity: 1;
+    visibility: visible;
+}
+/* MEDIA QUERIES (MEDIAM DEVICES) */
+@media screen and(max-width: 1024px) {
+   .p{
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+   }
+    
+}
+/* MEDIA QUERIES (SMALL DEVICES) */
+@media screen and(max-width: 600px) {
+    header{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+    }
+    
+}
